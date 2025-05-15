@@ -3,6 +3,9 @@ import requests
 
 app = Flask(__name__)
 
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
 LT_API = "https://libretranslate.de/translate"
 
 # Проверка, что сервер запущен
